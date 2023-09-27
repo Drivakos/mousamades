@@ -1,6 +1,9 @@
 <template>
   <div>
     <HeaderComponent></HeaderComponent>
-    <BodyComponent></BodyComponent>
+    <MainSliderComponent></MainSliderComponent>
+    <BuiltWithComponent></BuiltWithComponent>
+    <ServicesComponent></ServicesComponent>
+    <SamplesComponent></SamplesComponent>
   </div>
 </template>

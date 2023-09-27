@@ -46,9 +46,10 @@ body {
 
 .main-slider-text {
   text-align: center;
-  font-size: clamp(25px, 3vw, 40px);
+  font-size: clamp(30px, 3vw, 60px);
   color: aliceblue;
   font-weight: 700;
   //transform: translateY(-150%);
+  padding-top: 20px;
   text-shadow: 2px 2px 4px #000000;
 }
