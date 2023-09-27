@@ -39,3 +39,16 @@ body {
     display: none;
   }
 }
+
+.main-slider-wrapper {
+  padding-top: 40px;
+}
+
+.main-slider-text {
+  text-align: center;
+  font-size: clamp(25px, 3vw, 40px);
+  color: aliceblue;
+  font-weight: 700;
+  //transform: translateY(-150%);
+  text-shadow: 2px 2px 4px #000000;
+}
