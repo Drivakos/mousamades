@@ -29,6 +29,9 @@ body {
   justify-items: center;
   align-items: center;
   max-width: 100%;
+  @media (max-width: 1200px) and (min-width: 480px) {
+    padding: 0 20px;
+  }
   @media (max-width: 480px) {
     grid-template-columns: 50% 50%;
   }
@@ -52,4 +55,43 @@ body {
   //transform: translateY(-150%);
   padding-top: 20px;
   text-shadow: 2px 2px 4px #000000;
+}
+
+.build-with-title {
+  text-align: center;
+  font-size: clamp(30px, 3vw, 60px);
+  color: aliceblue;
+  font-weight: 600;
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+.build-with-wrapper {
+  display: flex;
+  justify-content: center;
+  img {
+    max-width: 50%;
+    padding: 15px;
+  }
+}
+
+.slide {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  text-decoration: none;
+
+  img {
+    height: 170px;
+    object-fit: contain;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+  }
+}
+.slide-text {
+  text-align: center;
+  font-size: clamp(20px, 3vw, 50px);
+  padding: 15px;
+  color: aliceblue;
+  font-weight: 500;
 }
