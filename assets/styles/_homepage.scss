@@ -57,7 +57,7 @@ body {
   text-shadow: 2px 2px 4px #000000;
 }
 
-.build-with-title {
+.build-with-title, .services-title {
   text-align: center;
   font-size: clamp(30px, 3vw, 60px);
   color: aliceblue;
@@ -95,3 +95,22 @@ body {
   color: aliceblue;
   font-weight: 500;
 }
+
+.services-wrapper {
+  color: aliceblue;
+  font-weight: 500;
+  font-size: clamp(15px, 3vw, 1.4rem);
+  text-align: center;
+  .services-text-box span {
+    text-decoration: underline;
+  }
+  ul {
+    list-style-type: none;
+  }
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  @media (max-width: 760px) {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
