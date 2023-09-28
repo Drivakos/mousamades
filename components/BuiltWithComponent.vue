@@ -1,5 +1,5 @@
 <template>
-  <div class="build-with-outer-wrapper">
+  <div class="build-with-outer-wrapper parallax-services">
     <div class="build-with-title">ΥΛΙΚΑ</div>
     <div class="build-with-wrapper">
       <a href="https://www.mehler-texnologies.com/en/produkte-archive/tarp-fr/" class="slide">

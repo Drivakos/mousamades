@@ -100,7 +100,13 @@ body {
   font-weight: 500;
 }
 
+.slide-text, .build-with-title {
+  filter: drop-shadow(5px 5px 5px #222);
+  font-weight: 600;
+}
+
 .services-wrapper {
+  z-index: 2;
   padding-top: 2rem;
   color: aliceblue;
   font-weight: 500;
@@ -247,4 +253,20 @@ body {
   @media (max-width: 760px) {
     max-width: 80%;
   }
+}
+
+.parallax-services {
+  z-index: -1;
+  /* The image used */
+  background-image: url("/public/services-images/blurred-bg.jpg");
+
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
