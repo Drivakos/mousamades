@@ -74,6 +74,7 @@ body {
   display: flex;
   justify-content: center;
   img {
+    background: #e3e3e3;
     max-width: 50%;
     padding: 15px;
   }
@@ -249,13 +250,13 @@ body {
   font-size: clamp(15px, 3vw, 1.4rem);
   color: aliceblue;
   font-weight: 500;
-  padding: 15px;
+  padding: 70px 15px;
   @media (max-width: 760px) {
     max-width: 80%;
   }
 }
 
-.parallax-services {
+.parallax-built-with {
   z-index: -1;
   /* The image used */
   background-image: url("/public/services-images/blurred-bg.jpg");
@@ -269,4 +270,15 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.built-with-logo {
+  max-height: 150px;
+  object-fit: contain;
+  transition: all 1s ease-in-out;
+
+  &:hover {
+    transition: all 1s ease-in-out;
+    scale: (1.1);
+  }
 }
