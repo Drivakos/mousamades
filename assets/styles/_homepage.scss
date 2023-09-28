@@ -213,22 +213,38 @@ body {
 }
 
 .services-building-icon {
+  transition: all 1s ease-in-out;
   max-height: 15px;
   margin: 0 auto;
-  top: 0;
   z-index: -1;
 }
 
 .services-text-box:hover {
-  .services-truck-icons {
-    left: 60%;
-    transition: all 1s ease-in-out;
+  @media (min-width: 760px) {
+    .services-truck-icons {
+      left: 60%;
+      transition: all 1s ease-in-out;
+    }
+    .services-building-icon {
+      transition: all 1s ease-in-out;
+      max-height: 100px;
+      z-index: -1;
+      margin: 0 auto;
+    }
   }
-  .services-building-icon {
-    position: absolute;
-    transition: all 1s ease-in-out;
-    max-height: 100px;
-    z-index: -1;
-    margin: 0 auto;
+}
+
+.main-slider-description {
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  max-width: 50%;
+  text-align: center;
+  font-size: clamp(15px, 3vw, 1.4rem);
+  color: aliceblue;
+  font-weight: 500;
+  padding: 15px;
+  @media (max-width: 760px) {
+    max-width: 80%;
   }
 }
