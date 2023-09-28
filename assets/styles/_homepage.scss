@@ -67,7 +67,7 @@ body {
   }
 }
 
-.build-with-title, .services-title, .samples-title, .contact-section-title {
+.build-with-title, .services-title, .samples-title, .contact-section-title, .clients-title {
   text-align: center;
   font-size: clamp(30px, 3vw, 60px);
   color: aliceblue;
@@ -102,7 +102,7 @@ body {
     filter: drop-shadow(5px 5px 5px #222);
   }
 }
-.slide-text, .samples-slider-text, .contact-section-text {
+.slide-text, .samples-slider-text, .contact-section-text, .clients-slider-text {
   text-align: center;
   font-size: clamp(20px, 3vw, 50px);
   padding: 15px;
@@ -110,7 +110,7 @@ body {
   font-weight: 500;
 }
 
-.slide-text, .build-with-title {
+.slide-text, .build-with-title, .clients-slider-text, .clients-title {
   filter: drop-shadow(5px 5px 5px #222);
   font-weight: 600;
 }
@@ -151,13 +151,13 @@ body {
     }
 }
 
-.samples-slider-img {
+.samples-slider-img, .clients-slider-img {
   width: 100%;
   object-fit: contain;
   padding: 15px;
 }
 
-.samples-slider {
+.samples-slider, .clients-slider {
   position: relative;
   width: 100%;
   .carousel__slide {
@@ -271,8 +271,34 @@ body {
 .parallax-built-with {
   z-index: -1;
   /* The image used */
-  background-image: url("/public/services-images/blurred-bg.jpg");
+  background-image: url("/services-images/blurred-bg.jpg");
 
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.built-with-logo {
+  max-height: 150px;
+  object-fit: contain;
+  transition: all 1s ease-in-out;
+
+  &:hover {
+    transition: all 1s ease-in-out;
+    scale: (1.1);
+  }
+}
+
+.parallax-clients {
+  margin-top: 3rem;
+  z-index: -1;
+  /* The image used */
+  background-image: url("/clients-assets/blurred-truck-bg.jpg");
 
   /* Set a specific height */
   min-height: 500px;
