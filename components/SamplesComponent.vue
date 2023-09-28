@@ -1,8 +1,11 @@
 <template>
   <div class="samples-title">ΔΕΙΓΜΑΤΑ</div>
-  <carousel :autoplay="4000" :transition="1500" class="samples-slider" v-bind="settings" :breakpoints="breakpoints">
+  <carousel :transition="1500" class="samples-slider" v-bind="settings" :breakpoints="breakpoints">
     <slide v-for="slide in 4" :key="slide" >
       <img :src="`https://picsum.photos/seed/${slide}/800/300`" alt="main slider image" class="samples-slider-img" />
+      <div class="samples-slider-text">
+        {{ slideTitlesArray[slide] }}
+      </div>
     </slide>
   </carousel>
 </template>
@@ -10,17 +13,21 @@
 <script>
 
 import 'vue3-carousel/dist/carousel.css'
-import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
+import { Carousel, Slide } from 'vue3-carousel'
 
 export default {
   name: 'App',
   components: {
     Carousel,
-    Slide,
-    Pagination,
-    Navigation
+    Slide
   },
   data: () => ({
+    slideTitlesArray : {
+      '1' : 'Αυτοκολλητεσ επιγραφες',
+      '2' : 'Καλύψεις Βιομηχανικών Χώρων',
+      '3' : 'Μουσαμάδες',
+      '4' : 'Ταμπέλες Εταιρειών και Καταστημάτων'
+    },
     // carousel settings
     settings: {
       itemsToShow: 3,
