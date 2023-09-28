@@ -9,5 +9,8 @@ export default defineNuxtConfig({
   css: [
     '@/assets/styles/_homepage.scss',
   ],
-  devtools: { enabled: true }
+  runtimeConfig: {
+    googleAnalyticsId: process.env.googleAnalyticsId,
+    googleTagManagerId: process.env.googleTagManagerId,
+  },
 })
