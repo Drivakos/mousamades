@@ -101,6 +101,7 @@ body {
 }
 
 .services-wrapper {
+  padding-top: 2rem;
   color: aliceblue;
   font-weight: 500;
   font-size: clamp(15px, 3vw, 1.4rem);
@@ -190,5 +191,44 @@ body {
       padding-bottom: 15px;
     }
   }
+  .pt-2 {
+    padding-top: 2rem;
+  }
+}
 
+.services-text-box {
+  position: relative;
+  z-index: 1;
+}
+
+.services-truck-icons {
+  position: absolute;
+  z-index: -1;
+  left: 20%;
+  transition: all 1s ease-in-out;
+  width: 200px;
+  @media (max-width: 760px) {
+    max-width: 100px;
+  }
+}
+
+.services-building-icon {
+  max-height: 15px;
+  margin: 0 auto;
+  top: 0;
+  z-index: -1;
+}
+
+.services-text-box:hover {
+  .services-truck-icons {
+    left: 60%;
+    transition: all 1s ease-in-out;
+  }
+  .services-building-icon {
+    position: absolute;
+    transition: all 1s ease-in-out;
+    max-height: 100px;
+    z-index: -1;
+    margin: 0 auto;
+  }
 }

@@ -14,7 +14,7 @@
           </a>
         </div>
       </div>
-      <div class="text-line">
+      <div class="text-line pt-2">
         <a href="tel:+2105550554">
           <img src="/phone-logo.svg" alt="Mousamades Petros Drivakos phone" class="">
         </a>
