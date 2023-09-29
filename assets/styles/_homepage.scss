@@ -339,3 +339,9 @@ body {
 .pos-rel {
   position: relative;
 }
+
+.parallax-built-with , .parallax-clients {
+  @media (max-width: 760px) {
+    background-attachment: scroll;
+  }
+}
