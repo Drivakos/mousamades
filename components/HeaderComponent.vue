@@ -1,6 +1,6 @@
 <template>
   <div class="header-wrapper">
-    <img src="/mousamades%20logo.png" alt="Mousamades Drivakos logo" class="site-logo">
+    <img src="/mousamades-logo.png" alt="Mousamades Drivakos logo" class="site-logo">
     <div class="hidden-mobile"></div>
     <div class="contact-info-wrapper">
       <a href="tel:+2105550554">

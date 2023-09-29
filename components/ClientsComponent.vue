@@ -1,7 +1,7 @@
 <template>
   <div class="parallax-clients">
     <div class="clients-title"></div>
-    <carousel :transition="1500" class="clients-slider " v-bind="settings" :breakpoints="breakpoints" :autoplay="4000">
+    <carousel :transition="1500" class="clients-slider " v-bind="settings" :breakpoints="breakpoints" :autoplay="4000" :mouseDrag="true" :touchDrag="true" :wrap-around="true">
       <slide v-for="slide in 6" :key="slide" >
         <img :src="`/clients-assets/${slide}.jpg`" alt="clients slider image" class="clients-slider-img" />
       </slide>

@@ -1,6 +1,6 @@
 <template>
   <div class="samples-title">ΔΕΙΓΜΑΤΑ</div>
-  <carousel :transition="1500" class="samples-slider" v-bind="settings" :breakpoints="breakpoints">
+  <carousel :transition="1500" class="samples-slider" v-bind="settings" :breakpoints="breakpoints" :mouseDrag="true" :touchDrag="true" :wrap-around="true">
     <slide v-for="slide in 4" :key="slide" >
       <img :src="`/samples-assets/${slide}.jpg`" alt="samples slider image" class="samples-slider-img" />
       <div class="samples-slider-text">
