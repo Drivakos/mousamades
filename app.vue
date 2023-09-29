@@ -1,6 +1,5 @@
 <template>
   <div>
-    <analytics></analytics>
     <HeaderComponent></HeaderComponent>
     <MainSliderComponent></MainSliderComponent>
     <BuiltWithComponent></BuiltWithComponent>
@@ -8,6 +7,7 @@
     <SamplesComponent></SamplesComponent>
     <ClientsComponent></ClientsComponent>
     <ContactComponent></ContactComponent>
+    <analytics></analytics>
   </div>
 </template>
 

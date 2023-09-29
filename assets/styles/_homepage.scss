@@ -69,6 +69,10 @@ body {
     font-size: clamp(35px, 4vw, 70px);
     font-weight: 800;
   }
+  @media (max-width: 480px) {
+    position: relative;
+    bottom: 0;
+  }
 }
 
 .build-with-title, .services-title, .samples-title, .contact-section-title, .clients-title {
@@ -269,6 +273,7 @@ body {
   padding: 70px 15px;
   @media (max-width: 760px) {
     max-width: 80%;
+    padding: 40px 15px;
   }
 }
 
