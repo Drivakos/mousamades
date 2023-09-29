@@ -1,5 +1,6 @@
 <template>
   <div>
+    <analytics></analytics>
     <HeaderComponent></HeaderComponent>
     <MainSliderComponent></MainSliderComponent>
     <BuiltWithComponent></BuiltWithComponent>
@@ -11,7 +12,7 @@
 </template>
 
 <script setup lang="ts">
-
+import analytics from '@vercel/analytics';
 useHead({
   title: 'ΜΟΥΣΑΜΑΔΕΣ ΠΕΤΡΟΣ ΔΡΙΒΑΚΟΣ',
   meta: [
