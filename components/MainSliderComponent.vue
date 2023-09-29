@@ -1,7 +1,7 @@
 <template>
   <carousel :items-to-show="1" :autoplay="4000" :wrap-around="true" :transition="1500" class="main-slider-wrapper">
-    <slide v-for="slide in 4" :key="slide" :autoplay="true">
-      <img :src="`https://picsum.photos/seed/${slide}/800/300`" alt="main slider image" class="main-slider-img" />
+    <slide v-for="slide in 6" :key="slide" :autoplay="true">
+      <img :src="`/mainSlider/${slide}.jpg`" alt="main slider image" class="main-slider-img" />
     </slide>
   </carousel>
   <div class="main-slider-text">

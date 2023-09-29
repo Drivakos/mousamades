@@ -5,6 +5,7 @@
     <BuiltWithComponent></BuiltWithComponent>
     <ServicesComponent></ServicesComponent>
     <SamplesComponent></SamplesComponent>
+    <ClientsComponent></ClientsComponent>
     <ContactComponent></ContactComponent>
   </div>
 </template>
