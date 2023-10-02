@@ -23,10 +23,11 @@ body {
   @media (max-width: 480px) {
     grid-gap: 10px;
   }
- img {
-   height: 40px;
+
+  img {
+    height: 40px;
     width: 40px;
- }
+  }
 }
 
 .header-wrapper {
@@ -65,10 +66,12 @@ body {
   //transform: translateY(-150%);
   padding-top: 20px;
   text-shadow: 2px 2px 4px #000000;
+
   span {
     font-size: clamp(35px, 4vw, 70px);
     font-weight: 800;
   }
+
   @media (max-width: 480px) {
     position: relative;
     bottom: 0;
@@ -90,6 +93,7 @@ body {
 .build-with-wrapper {
   display: flex;
   justify-content: center;
+
   img {
     background: #e3e3e3;
     max-width: 50%;
@@ -110,6 +114,7 @@ body {
     filter: drop-shadow(5px 5px 5px #222);
   }
 }
+
 .slide-text, .samples-slider-text, .contact-section-text, .clients-slider-text {
   text-align: center;
   font-size: clamp(20px, 3vw, 50px);
@@ -130,17 +135,20 @@ body {
   font-weight: 500;
   font-size: clamp(15px, 3vw, 1.4rem);
   text-align: center;
+
   .services-text-box span {
     text-decoration: underline;
     font-weight: 600;
   }
+
   ul {
     list-style-type: none;
   }
+
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   @media (max-width: 760px) {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     padding: 10px;
     text-align: left;
     svg {
@@ -150,13 +158,14 @@ body {
 }
 
 .main-slider-img {
-    width: fit-content;
-    object-fit: cover;
-    aspect-ratio: 1800/768;
-    @media (max-width: 760px) {
-      width: 100%;
-      overflow: hidden;
-    }
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1800/768;
+
+  @media (max-width: 760px) {
+    width: 100%;
+    overflow: hidden;
+  }
 }
 
 .samples-slider-img, .clients-slider-img {
@@ -168,6 +177,7 @@ body {
 .samples-slider, .clients-slider {
   position: relative;
   width: 100%;
+
   .carousel__slide {
     display: block;
   }
@@ -218,6 +228,7 @@ body {
       padding-bottom: 15px;
     }
   }
+
   .pt-2 {
     padding-top: 2rem;
   }
@@ -340,7 +351,7 @@ body {
   position: relative;
 }
 
-.parallax-built-with , .parallax-clients {
+.parallax-built-with, .parallax-clients {
   @media (max-width: 760px) {
     background-attachment: scroll;
   }
