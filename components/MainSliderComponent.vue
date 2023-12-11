@@ -2,7 +2,11 @@
   <div class="pos-rel">
     <carousel :items-to-show="1" :autoplay="4000" :wrap-around="true" :transition="1500" class="main-slider-wrapper">
       <slide v-for="slide in 7" :key="slide" :autoplay="true">
-        <img :src="`/mainSlider/${slide}.jpg`" alt="main slider image" class="main-slider-img"/>
+        <NuxtImg
+            :src="`/mainSlider/${slide}.jpg`"
+            :alt="`main ${slide} image`"
+            class="main-slider-img"
+        />
       </slide>
     </carousel>
     <div class="main-slider-text">
