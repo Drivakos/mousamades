@@ -6,6 +6,9 @@ export default defineNuxtConfig({
       viewport: 'width=device-width, initial-scale=1',
     }
   },
+  modules: [
+    '@nuxt/image',
+  ],
   css: [
     '@/assets/styles/_homepage.scss',
   ],
@@ -13,4 +16,7 @@ export default defineNuxtConfig({
     googleAnalyticsId: process.env.googleAnalyticsId,
     googleTagManagerId: process.env.googleTagManagerId,
   },
+  image: {
+    format: ['webp'],
+  }
 })
