@@ -5,6 +5,7 @@
       <NuxtImg
           :src="`/samples-assets/${slide}.jpg`"
           :alt="`samples slider image no ${slide}`"
+          :loading="slide <= 4 ? 'eager' : 'lazy'"
           class="samples-slider-img"
       />
       <div class="samples-slider-text">

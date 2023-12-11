@@ -5,6 +5,7 @@
         <NuxtImg
             :src="`/mainSlider/${slide}.jpg`"
             :alt="`main slider image no ${slide}`"
+            :loading="slide === 1 ? 'eager' : 'lazy'"
             class="main-slider-img"
         />
       </slide>
