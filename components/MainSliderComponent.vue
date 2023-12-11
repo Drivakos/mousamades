@@ -4,7 +4,7 @@
       <slide v-for="slide in 7" :key="slide" :autoplay="true">
         <NuxtImg
             :src="`/mainSlider/${slide}.jpg`"
-            :alt="`main ${slide} image`"
+            :alt="`main slider image no ${slide}`"
             class="main-slider-img"
         />
       </slide>
