@@ -8,6 +8,7 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxt/image',
+    '@nuxtjs/robots'
   ],
   css: [
     '@/assets/styles/_homepage.scss',
@@ -18,5 +19,5 @@ export default defineNuxtConfig({
   },
   image: {
     format: ['webp'],
-  }
+  },
 })

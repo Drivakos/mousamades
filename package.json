@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@nuxt/image": "^1.1.0",
+    "@nuxtjs/robots": "^3.0.0",
     "@vercel/analytics": "^1.0.2",
     "vue3-carousel": "^0.3.1"
   }
