@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div lang="el">
     <HeaderComponent></HeaderComponent>
     <MainSliderComponent></MainSliderComponent>
     <BuiltWithComponent></BuiltWithComponent>
