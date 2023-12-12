@@ -7,12 +7,13 @@
     <SamplesComponent></SamplesComponent>
     <ClientsComponent></ClientsComponent>
     <ContactComponent></ContactComponent>
-    <analytics></analytics>
+    <speed-insights></speed-insights>
   </div>
 </template>
 
 <script setup lang="ts">
-import analytics from '@vercel/analytics';
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 useHead({
   title: 'ΜΟΥΣΑΜΑΔΕΣ ΠΕΤΡΟΣ ΔΡΙΒΑΚΟΣ',
   meta: [
