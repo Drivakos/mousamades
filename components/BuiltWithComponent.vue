@@ -12,7 +12,7 @@
         />
         <div class="slide-text">ΥΛΙΚΑ <br> ΜΟΥΣΑΜΑΔΩΝ</div>
       </a>
-      <a class="slide">
+      <div class="slide">
         <NuxtImg
             src="/build-with-assets/stickers.png"
             alt="stickers for trucks"
@@ -21,7 +21,7 @@
             class="built-with-logo"
         />
         <div class="slide-text"> ΚΟΠΤΙΚΑ <br> ΑΥΤΟΚΟΛΛΗΤΑ</div>
-      </a>
+      </div>
     </div>
   </div>
 </template>
