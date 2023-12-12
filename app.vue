@@ -8,10 +8,12 @@
     <ClientsComponent></ClientsComponent>
     <ContactComponent></ContactComponent>
     <speed-insights></speed-insights>
+    <analytics></analytics>
   </div>
 </template>
 
 <script setup lang="ts">
+import analytics from '@vercel/analytics';
 import { SpeedInsights } from "@vercel/speed-insights/nuxt"
 
 useHead({
