@@ -7,6 +7,8 @@
             :src="`/clients-assets/${slide}.jpg`"
             :alt="`clients slider image no ${slide}`"
             :loading="slide <= 4 ? 'eager' : 'lazy'"
+            sizes="660px"
+            format="webp"
             class="clients-slider-img"
         />
       </slide>

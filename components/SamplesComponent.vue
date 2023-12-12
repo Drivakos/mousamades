@@ -6,6 +6,8 @@
           :src="`/samples-assets/${slide}.jpg`"
           :alt="`samples slider image no ${slide}`"
           :loading="slide <= 4 ? 'eager' : 'lazy'"
+          sizes="660px"
+          format="webp"
           class="samples-slider-img"
       />
       <div class="samples-slider-text">
