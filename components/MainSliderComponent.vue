@@ -8,6 +8,8 @@
             :loading="slide === 1 ? 'eager' : 'lazy'"
             sizes="1920px sm:768px md:1440px"
             format="webp"
+            width="1500px"
+            height="1100px"
             quality="100"
             class="main-slider-img"
         />
