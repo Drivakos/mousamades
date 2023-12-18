@@ -6,9 +6,10 @@
             :src="`/mainSlider/${slide}.jpg`"
             :alt="`main slider image no ${slide}`"
             :loading="slide === 1 ? 'eager' : 'lazy'"
-            sizes="1920px sm:768px md:1440px"
+            sizes="1440px sm:768px md:1440px"
             format="webp"
             quality="100"
+            densities="x1 x2"
             class="main-slider-img"
         />
       </slide>
