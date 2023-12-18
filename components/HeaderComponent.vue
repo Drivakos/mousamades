@@ -1,6 +1,10 @@
 <template>
   <div class="header-wrapper">
-    <NuxtImg :src="`/mousamades-logo.png`" alt="Mousamades Drivakos logo" class="site-logo"></NuxtImg>
+    <NuxtImg
+        :src="`/mousamades-logo.png`"
+        alt="Mousamades Drivakos logo"
+        class="site-logo">
+    </NuxtImg>
     <div class="hidden-mobile"></div>
     <div class="contact-info-wrapper">
       <a href="tel:+2105550554">

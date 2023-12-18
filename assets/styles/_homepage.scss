@@ -7,6 +7,8 @@ body {
 
 .site-logo {
   padding: 10px 0 0 10px;
+  aspect-ratio: auto 180/100;
+  min-height: 60px;
   max-height: 100px;
   max-width: 100%;
   -webkit-user-drag: none;
@@ -53,8 +55,7 @@ body {
 .main-slider-wrapper {
   padding-top: 30px;
   img {
-    aspect-ratio: 1920/780;
-    object-fit: cover;
+    aspect-ratio: 1400/600;
   }
 }
 
@@ -355,5 +356,23 @@ body {
 .parallax-built-with, .parallax-clients {
   @media (max-width: 760px) {
     background-attachment: scroll;
+  }
+}
+
+.ofc {
+  img {
+    object-fit: contain;
+  }
+}
+
+.clients-slider {
+  img {
+    aspect-ratio: auto 253/190;
+  }
+}
+
+.samples-slider {
+  img {
+    aspect-ratio: auto 223/167;
   }
 }
