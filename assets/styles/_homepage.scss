@@ -51,7 +51,11 @@ body {
 }
 
 .main-slider-wrapper {
-  padding-top: 40px;
+  padding-top: 30px;
+  img {
+    aspect-ratio: 1920/780;
+    object-fit: cover;
+  }
 }
 
 .main-slider-text {
