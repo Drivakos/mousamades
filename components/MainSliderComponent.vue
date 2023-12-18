@@ -1,6 +1,6 @@
 <template>
   <div class="pos-rel ">
-    <carousel :items-to-show="1" :wrap-around="true" :transition="1500" class="main-slider-wrapper">
+    <carousel :items-to-show="1" :autoplay="4000" :wrap-around="true" :transition="1500" class="main-slider-wrapper">
       <slide v-for="slide in 7" :key="slide" :autoplay="true">
         <NuxtImg
             :src="`/mainSlider/${slide}.jpg`"
